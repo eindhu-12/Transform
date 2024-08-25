@@ -7,17 +7,43 @@ h1{
     font-weight: 20px;
 }
 .div1{
-    height: 300px;
+    height: 200px;
     width: 200px;
     background-color: lightcoral;
     transition-duration: 4s;
     transition-property: all;
+    transition-duration: 4s;
     transition-delay: 2s;
     transition-timing-function: ease-in-out;
+    /* shorthand */
+    transition: marigin-right s;
 }
 .div1:hover{
     width: 400px;
-    height: 400px;
-    border-radius: 50%;
+    height: 600px;
+    border-radius: 90%;
     background-color: aqua;
+    border: 10px solid black;
+}
+
+.div2{
+    height: 100px;
+    width: 100px;
+    background-color: lightcoral;
+    transition-duration: 5s;
+    transition-property: all;
+    transition-timing-function: ease;
+    margin-left: 100px;
+}
+.div2:hover{
+    /* width: 250px;
+    height: 300px; */
+    /* transform:rotate(270deg); */
+    /* transform: scale(0.5,0.5); */
+    /* transform: translate(50px,200px); */
+    transform: skew(70deg ,80deg);
+    border: 1px black solid;
+    box-shadow: 3px 3px 8px rgb(167, 25, 48);
+    border-radius: 50%;
+    background:linear-gradient(skyblue ,purple,lightgray,lightpink);
 }
